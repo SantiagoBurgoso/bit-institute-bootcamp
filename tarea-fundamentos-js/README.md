@@ -1,7 +1,5 @@
 # Investigacion: Fundamentos de JavaScript
 
-En este repositorio se encuentran los conveptos fundamentales de JavaScript.
-
 **Nota:** Los ejemplos ejecutables se encuentran dentro de la carpeta '/js' de este repositorio.
 
 ## 1. Operadores de comparacion:
