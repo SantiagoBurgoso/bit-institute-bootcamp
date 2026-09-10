@@ -84,3 +84,82 @@ body {
 .btn-primary:hover {
     background-color: #6a1b9a;
 }
+
+/* Concept Section */
+
+.about-section {
+    padding: 80px 50px;
+    text-align: center;
+    background-color: #121212;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    color: #cccccc;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Catalog Section */
+
+.gallery-section {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #181818;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #282828;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #a0a0a0;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #8a2be2;
+    }
+
+@media (max-width: 768px) {
+    .grid-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
