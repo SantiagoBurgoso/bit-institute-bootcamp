@@ -53,7 +53,7 @@ body {
     align-items: center;
     text-align: center;
     padding: 0 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Portada\ Tienda.png') center/cover;
 }
 
 .hero-content h1 {
@@ -161,5 +161,189 @@ body {
 @media (max-width: 768px) {
     .grid-gallery {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Testimonial Section */
+
+.testimonials-section  {
+    padding: 80px 50px;
+    background-color: #0d0d0d;
+    text-align: center;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+}
+
+.testimonial-card p {
+    color: #cccccc;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.testimonial-card h4 {
+    color: #8a2be2;
+    font-weight: 600;
+}
+
+/* Form Section */
+
+.custom-section {
+    padding: 80px 20px;
+    background-color: #111111;
+    text-align: center;
+}
+
+.section-desc {
+    color: #aaaaaa;
+    margin-bottom: 40px;
+}
+
+.order-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #2a2a2a;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #0d0d0d;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #8a2be2;
+    box-shadow: 0 0 8px rgba(138, 43, 226, 0.4);
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #8a2be2;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3 ease, transform 0.2 ease;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #9d3bf0;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+
+.main-footer {
+    background-color: #050505;
+    border-top: 1px solid #222222;
+    padding: 60px 40px 20px 40px;
+    color: #aaaaaa;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-brand h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-links h4,
+.footer-social h4 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links a,
+.footer-social a {
+    color: #aaaaaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #8a2be2;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid #1a1a1a;
+    text-align :center;
+    font-size: 0.85rem;
+    color: #666666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .testimonials-section,
+    .custom-section {
+        padding: 50px 20px;
+    }
+
+    .order-form {
+        padding: 24px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
     }
 }

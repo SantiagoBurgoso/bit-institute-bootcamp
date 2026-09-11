@@ -72,5 +72,94 @@
      </div>
   </section>
 
+  <!-- Testimonials section -->
+
+  <section id="testimonials" class="testimonials-section">
+    <h2>Lo Que Dicen <span class="highlight">Nuestros Clientes</span></h2>
+
+    <div class="testimonials-grid">
+        <div class="testimonials-card">
+            <p>"La calidad del cuadro de Chromakopia superó mis expectativas. El marco de alta calidad hace resaltar totalmente la portada.</p>
+            <h4>- Camilo R.</h4>
+        </div>
+
+        <div class="testimonials-card">
+            <p>"El diseño de Corsa se ve increible en mi estudio. Definitivamente voy a pedir un par más.</p>
+            <h4>- Andres G.</h4>
+        </div>
+    </div>
+  </section>
+
+  <!-- Order / Custom Request Form Section -->
+   <section id="custom" class="custom-section">
+    <h2>Haz Tu <span class="highlight">Pedido Personalizado</span></h2>
+    <p class="section-desc">¿Quieres un álbum especifico que no está en el catálogo? Cuéntanos tu idea.</p>
+
+    <form class="order-form" action="#" method="post">
+        <div class="form-group">
+            <label for="name">Nombre Completo:</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="album">Álbum y Artista</label>
+            <input type="text" id="album" name="album"
+            placeholder="Ej. Chromakopia - Tyler, The Creator" required>
+        </div>
+
+        <div class="form-group">
+            <label for="size">Tamaño del Cuadro</label>
+            <select id="size" name="size" required>
+                 <option value="" disabled selected>Selecciona un tamaño</option>
+                 <option value="small">Pequeño (20x20 cm)</option>
+                 <option value="medium">Mediano (30x30 cm)</option>
+                 <option value="large">Grande (50x50 cm)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Detalles Adicionales</label>
+            <textarea name="message" id="message" rows="4" placeholder="Especificaciones de color del marco o fondo..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary btn-submit">Enviar Solicitud</button>
+    </form>
+   </section>
+
+   <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Squares Lab</h3>
+                <p>Arte musical exclusivo enmarcado para tus espacios.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#about">Concepto</a></li>
+                    <li><a href="#gallery">Catálogo</a></li>
+                    <li><a href="#custom">Pedidos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Siguenos</h4>
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">WhatsApp</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 SquaresLab. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
