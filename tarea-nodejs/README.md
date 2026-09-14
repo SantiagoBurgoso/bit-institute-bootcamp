@@ -64,7 +64,7 @@ Ejemplo:
 
 Los controladores se exportan desde productControllers.js y se importan en productRoutes.js
 
-# JWT
+## JWT
 
 JWT significa JSON Web Token.
 
