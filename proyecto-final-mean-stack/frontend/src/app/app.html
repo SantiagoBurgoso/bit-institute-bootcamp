@@ -1,0 +1,28 @@
+<header class="navbar">
+  <a routerLink="/products" class="logo">
+    MINI STORE
+  </a>
+
+  <nav>
+    <a routerLink="/products">Products</a>
+
+    @if (!auth.isLoggedIn()) {
+      <a routerLink="/register">Register</a>
+      <a routerLink="/login">Login</a>
+    }
+
+    @if (auth.isLoggedIn()) {
+      <button type="button" (click)="logout()">
+        Logout
+      </button>
+    }
+  </nav>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<footer>
+  <p>Mini Store — MEAN Stack Final Project</p>
+</footer>
